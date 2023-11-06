@@ -33,4 +33,15 @@ const teamMember = [
         foto : "barbara-ramos-graphic-designer.jpg",
     }
 ];
+
+//MILESTONE 1:
+//Stampare su console le informazioni di nome, ruolo e la stringa della foto
 console.log(teamMember);
+
+//MILESTONE 2:
+//Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+document.write(
+    teamMember.map(i => Object.values(i).join(' '))
+    .join('<br>')
+  );
